@@ -74,11 +74,9 @@ height: auto;}
 .header-menu-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .header-menu-item {
-    
 }
 
 .header-menu-link {
@@ -86,7 +84,8 @@ height: auto;}
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42; }
+    color: #2e2f42; 
+}
 
 .header-menu-link:hover,
 .header-menu-link:focus {
@@ -106,7 +105,9 @@ background: #404bbf;
     gap: 40px;
 }
 
-.header-contacts-item {}
+.header-contacts-item {
+    padding: 24px 0;
+}
 
 .header-contacts-link {
     font-weight: 400;
@@ -114,7 +115,6 @@ background: #404bbf;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-
 }
 
 .header-contacts-link:hover,
