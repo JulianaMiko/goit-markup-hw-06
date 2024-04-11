@@ -49,7 +49,6 @@ height: auto;}
 
 .header-menu {
     display: flex;
-    gap: 76px;
     align-items: center;
 }
 
@@ -94,9 +93,9 @@ height: auto;}
     color: #404bbf;
 }
 
-.studio:active {
+/*.studio:active {
 background: #404bbf;
-}
+}*/
 
 .header-contacts {font-style: normal;
     margin-left: auto;
