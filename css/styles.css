@@ -40,7 +40,11 @@ height: auto;}
 /*-----------------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------*/
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow:  2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header-wrap {
     display: flex;
     align-items: center;
@@ -98,9 +102,12 @@ height: auto;}
 
 .header-menu-link:active::after {
 background: #404bbf;
+color: #404bbf;
 position: absolute;
-content:"" ;
-width: 48px;
+content: "" ;
+width: 100%;
+left: 0;
+bottom: -1px;
 height: 4px;
 border-radius: 2px;
 margin-top: 20px;
@@ -149,6 +156,7 @@ background-position: center;
 background-size: cover;
 padding-top: 188px;
 padding-bottom: 188px;
+max-width: 1440px;
 }
 
 .main-title {
@@ -179,13 +187,13 @@ padding-bottom: 188px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     min-width: 169px;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .main-button:hover,
 .main-button:focus {
-    background: #404bbf;}
+    background-color: #404bbf;}
 
 
 
@@ -226,16 +234,17 @@ padding-bottom: 188px;
     width: calc((100% - 3 * 24px) / 3);
 }
 .about-wrap{
-    /*display: flex;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 24px 100px; 
     background: #f4f4fd;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     margin-bottom: 8px;
+    height: 112px;
 }
 .about-icon {
-    /* justify-content: center;
-    align-items: center;*/
     margin: auto;
 }
 
@@ -328,6 +337,7 @@ padding-bottom: 188px;
     display: flex;
     gap: 24px;
     margin: 0 16px 0 16px;
+    justify-content: center;
 }
 
 .icon-item {
@@ -349,11 +359,12 @@ padding-bottom: 188px;
 }
 
 .icon-icon {
+    fill: #f4f4fd;
 }
 
 .icon-link:hover ,
 .icon-link:focus {
-    background-color: aquamarine;
+    background-color: #404bbf;
 }
 
 
@@ -492,4 +503,8 @@ color: #f4f4fd;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+}
+.footer-container {}
+.footer .icon-list {
+    justify-content: left;
 }
