@@ -87,6 +87,7 @@ height: auto;}
     padding: 24px 0;
     display: block;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /*content: "";*/
 }
 
@@ -106,7 +107,8 @@ margin-top: 20px;
 display: block;
 }
 
-.header-contacts {font-style: normal;
+.header-contacts {
+    font-style: normal;
     margin-left: auto;
 }
 
@@ -124,6 +126,7 @@ display: block;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-link:hover,
@@ -176,6 +179,7 @@ padding-bottom: 188px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     min-width: 169px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -221,17 +225,18 @@ padding-bottom: 188px;
 .about-item {
     width: calc((100% - 3 * 24px) / 3);
 }
-
-.about-icon {
+.about-wrap{
+    /*display: flex;*/
+    padding: 24px 100px; 
     background: #f4f4fd;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-    padding: 24px 100px;
     margin-bottom: 8px;
-
-    /*stroke: #4d5ae5;
-    stroke: #2e2f42;
-    fill: transparent;*/
+}
+.about-icon {
+    /* justify-content: center;
+    align-items: center;*/
+    margin: auto;
 }
 
 .about-subtitle {
@@ -322,6 +327,7 @@ padding-bottom: 188px;
 .icon-list {
     display: flex;
     gap: 24px;
+    margin: 0 16px 0 16px;
 }
 
 .icon-item {
@@ -338,13 +344,15 @@ padding-bottom: 188px;
     justify-content: center;
     align-items: center;
     fill: white;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .icon-icon {
 }
 
-.icon-link:hover {
+.icon-link:hover ,
+.icon-link:focus {
     background-color: aquamarine;
 }
 
@@ -380,9 +388,37 @@ padding-bottom: 188px;
     background: #fff;
     /*max-width: 360px;*/
     width: calc((100% - 2 * 24px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover {
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-text-active {
+    transform: translateY(0);
+}
+
+.portfolio-active-wrap {
+    position: relative;
+    overflow: hidden;
 }
 
 .portfolio-images {
+}
+
+.portfolio-text-active {
+    position: absolute;
+    top: 0;
+    background-color: #4d5ae5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    height: 100%;
+    padding: 40px 32px 164px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-text-wrap {
