@@ -381,10 +381,27 @@
             </li>
             </ul>
         </div>
+
+        <div class="footer-input-wrap">
+            <p class="footer-subtitle">Subscribe</p>
+            <form class="footer-form">
+            <label class="footer-label">
+            <input
+            type="email"
+            class="footer-input"
+            name="footer-email"
+            placeholder="E-mail"/></label>
+
+            <button type="submit" class="footer-btn">Subscribe
+                <svg class="footer-btn-icon" type="button" width="24" height="20">
+                    <use href="./images/icons.svg#icon-post"></use>
+                </svg>
+            </button></form>
+        </div>
     </div>
     </footer>
 
-<div class="modal-overlay is-open">
+<div class="modal-overlay">
     <div class="modal">
         <button type="button" class="modal-btn-close">
             <svg class="modal-icon" type="button" width="8" height="8">
@@ -451,12 +468,12 @@
                 type="checkbox" 
                 id="policy" 
                 name="policy" 
-                class="modal-check" 
+                class="modal-check visually-hidden" 
                 value="true"/>
                 <label for="policy" class="check-text">
                     <span>
-                        <svg class="check-icon">
-                            <use href="./images/icons.svg"></use>
+                        <svg class="check-icon" width="10" height="8">
+                            <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                     </span>I accept the terms and conditions of the 
                     <a href="" class="link-policy">Privacy Policy</a></label>
