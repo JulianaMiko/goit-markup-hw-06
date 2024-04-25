@@ -670,20 +670,24 @@ background-color: #31d0aa;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-.modal-btn-close:hover,
-.modal-btn-close:focus {
-    background-color: #404bbf;
-    border: none;
-}
 
 .modal-icon {
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-icon:hover,
-.modal-icon:focus {
-    fill: #ffffff;
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+    background-color: #404bbf;
+    border: none;
 }
+.modal-btn-close:hover .modal-icon,
+.modal-btn-close:focus .modal-icon{
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff
+}
+
 
 .modal-text {
         font-weight: 500;
@@ -790,9 +794,6 @@ border: 1px solid rgba(46, 47, 66, 0.4);
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
-        display: flex;
-        align-items: center;
-        gap: 8px;
 }
 
 .check-span {
@@ -808,6 +809,7 @@ border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 8px;
 }
 .check-icon {}
 
