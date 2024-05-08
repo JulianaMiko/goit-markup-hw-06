@@ -184,11 +184,12 @@ img {
     pointer-events:none;
     z-index: 2;
 }
-.navig{}
+.navig{
+    margin-bottom: 32px;
+}
 .close-menu-btn {
     display: block;
     margin-left: auto;
-
     position: absolute;
         width: 24px;
         height: 24px;
@@ -221,7 +222,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 32px;}
+    }
 
 .mob-menu-item {}
 
@@ -376,9 +377,7 @@ img {
         display: none;
 }
 
-.about-icon {
-    margin: auto;
-}
+.about-icon {}
 
 .about-subtitle {
     /*font-weight: 500;
@@ -628,8 +627,7 @@ footer .container {
 }
 
 .footer-logo-wrap {
-        margin: 0 auto;
-        margin-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -658,8 +656,7 @@ footer .container {
 }
 
 .footer-soc-wrap {
-        margin: 0 auto;
-        margin-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .footer-subtitle {
@@ -1028,17 +1025,17 @@ footer .container {
 
 @media screen and (min-width:768px) and (max-width:1157px){
     .container{width: 768px;}
-        .header-menu-list {display: flex;
+    .header-menu-list {display: flex;
                                     gap: 40px;}
-        .header-contacts-list {display: flex;
-                                            gap:12px;
-                                            flex-direction: column;}
-        .header-contacts-link{font-size: 12px;
+    .header-contacts-list {display: flex;
+                                        gap:12px;
+                                        flex-direction: column;}
+    .header-contacts-link{font-size: 12px;
                                     line-height: 1.17;
                                     letter-spacing: 0.04em;
-                                    }
-        .header-logo {margin-right: 120px;}
-        .open-menu-btn{display: none;}
+                                    font-weight: 400;}
+    .header-logo {margin-right: 120px;}
+    .open-menu-btn{display: none;}
 
     .main {padding-top: 112px;
                 padding-bottom: 112px;
@@ -1058,8 +1055,7 @@ footer .container {
     .about-subtitle{text-align: left;}
     .about-text{max-width: 356px;}
 
-    .team {padding-right: 92px;
-                padding-left: 92px;}
+    .team {}
     .team > .container {width: 584px;}
     .team-list{gap: 64px 24px;}
     .team-item{width: calc((100% - 24px) / 2);
@@ -1068,25 +1064,26 @@ footer .container {
     .portfolio-list{gap: 72px 24px;}
     .portfolio-item{width: calc((100% - 24px) / 2);}
     
-        footer .container {gap: 72px 24px;
-                                    align-items:flex-start;
-                                    padding-left: 0;
-                                    padding-right: 0;
-                                    max-width: 552px;}
-        .footer-logo-wrap {margin-left: 0;
+    footer .container {gap: 72px 24px;
+                                align-items:flex-start;
+                                padding-left: 0;
+                                padding-right: 0;
+                                max-width: 552px;}
+    .footer-logo-wrap {margin-left: 0;
                                     margin-bottom: 0;
                                     margin: 0;}
-        .footer-logo {display: inline-block;
+    .footer-logo {display: inline-block;
                                 text-align: left;}
-        .footer-text {max-width: 264px;}
-        .footer-soc-wrap {margin-left: 0;
+    .footer-text {max-width: 264px;}
+    .footer-soc-wrap {margin-left: 0;
                                 margin-bottom: 0;
                                 margin: 0;}
-        .footer-subtitle {text-align: left;}
-        .footer-form {flex-wrap: nowrap;
-                                gap: 24px;
-                                flex-direction: row;}
-        .footer-input {width: 264px;}
+    .footer-subtitle {text-align: left;}
+    .footer-form {flex-wrap: nowrap;
+                            gap: 24px;
+                            flex-direction: row;}
+    .footer-input {width: 264px;}
+    .modal {width: 408px;}
 }
 
 @media screen and (min-width:1158px) {
@@ -1152,5 +1149,6 @@ footer .container {
                         gap: 24px;
                         flex-direction: row;}
     .footer-input{width: 264px;}
+    .modal {width: 408px;}
 
 }
